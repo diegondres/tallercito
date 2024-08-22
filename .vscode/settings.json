@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Taller jueguitos.sln"
+    "dotnet.defaultSolution": "tallercito.sln"
 }

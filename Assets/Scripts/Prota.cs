@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Prota : MonoBehaviour
 {
+    private Rigidbody rb;   // Componente Rigidbody2D para gestionar la física
+    private GameController gameController;
     public float speed = 5.0f;    // Velocidad de movimiento
     public float jumpForce = 10.0f;   // Fuerza del salto
-    private Rigidbody rb;   // Componente Rigidbody2D para gestionar la física
     private bool isGrounded = true;   // Para verificar si el jugador está en el suelo
+    public int vidas = 3;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>(); // Obtiene el componente Rigidbody2D del objeto al que está adjunto este script
+        gameController = FindObjectOfType<GameController>();
+        gameController.UpdateVidas(vidas);
     }
 
     void Update()
@@ -42,6 +46,16 @@ public class Prota : MonoBehaviour
         {
             Debug.Log("Colision!!!s");
             isGrounded = true;
+        }
+        
+        if (collision.gameObject.CompareTag("Daño"))
+        {
+            Debug.Log("Auch!");
+            vidas -= 1;
+            gameController.UpdateVidas(vidas);
+            if(vidas == 0){
+                //Hacer cositas de moricion
+            }
         }
     }
 }

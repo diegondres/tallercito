@@ -1,0 +1,19 @@
+Cosas ya hechas: 
+  - Hacer un escenario pequeño, con diferentes lugares para moverse.
+  - Ajustar la camara para que se vea solo dentro del escenario creado
+  - Tener un prota el cual se mueva con las flechas y salte con otra tecla
+  - Hacer que algunas barras del escenario se muevan de un lado al otro.
+  - Falta un sistema de vidas, va a ser un int que va a tener el prota con elementos visuales.
+  - Falta el contador de tiempo. Solo debe ir contando el tiempo que ha pasado desde que se inicio
+
+Cosas por hacer: 
+- En las plataformas moviles el prota se tiene que mover junto con las plataformas.
+- Se tiene que hacer que aparezcan enemigos, o pueden ser portales desde los que salgan proyectiles que viajen en linea recta
+- Cuando los proyectiles hagan contacto con el prota, deben quitarle una vida. 
+- Cuando se le acaben las vidas tiene que salir un mensaje que se perdio e indicar cuanto tiempo se sobrevivio
+- Despues del mensaje de game over, se deberia pasar a una escena de entrada. Que deberia ser por defecto la que se abra siempre que se empiece a jugar.
+
+
+
+
+-Se tiene que hacer que el movimiento se sienta mucho mejor, onda que caiga de forma agradable.(no es prioritario ni de cerca xd)
