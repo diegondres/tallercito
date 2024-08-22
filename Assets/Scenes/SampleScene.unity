@@ -923,6 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contadorTiempoText: {fileID: 1353035749}
+  contadorVidas: {fileID: 21226611}
 --- !u!1 &950904761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 10
-  lives: 3
+  vidas: 3
 --- !u!54 &1145945382
 Rigidbody:
   m_ObjectHideFlags: 0
